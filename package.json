@@ -1,0 +1,80 @@
+{
+  "name": "@hpcc-js/comms",
+  "version": "0.0.1",
+  "description": "hpcc-js-comms - HPCC Platform Client Comms Library",
+  "main": "dist/comms.js",
+  "browser": "dist/comms-browser.js",
+  "module": "lib/index",
+  "jsnext": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "dist/**/*.*",
+    "lib/**/*.*"
+  ],
+  "scripts": {
+    "clean": "gulp clean",
+    "compile": "gulp compile-all",
+    "doc": "gulp docs",
+    "bundle": "gulp bundle-all",
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "lint": "tslint ./src/**/*",
+    "unittest": "mocha ./lib-test/test/index-node.js",
+    "pretest": "gulp compile-test",
+    "test": "npm run lint && npm run unittest",
+    "coverage": "npm run pretest && nyc --reporter=html npm run unittest"
+  },
+  "dependencies": {
+    "d3-request": "~1.0.5",
+    "d3-time-format": "~2.0.5",
+    "es6-promise": "~4.0.5",
+    "request": "~2.81.0",
+    "tslib": "~1.6.0",
+    "xmldom": "~0.1.27"
+  },
+  "devDependencies": {
+    "@types/chai": "~3.4.35",
+    "@types/d3-request": "~1.0.1",
+    "@types/d3-time-format": "~2.0.4",
+    "@types/mocha": "~2.2.40",
+    "@types/request": "~0.0.41",
+    "@types/xmldom": "~0.1.29",
+    "chai": "~3.5.0",
+    "gulp": "~3.9.1",
+    "gulp-bump": "~2.7.0",
+    "gulp-filter": "~5.0.0",
+    "gulp-git": "~2.1.0",
+    "gulp-replace": "~0.5.4",
+    "gulp-shell": "~0.6.3",
+    "gulp-tag-version": "~1.3.0",
+    "gulp-watch": "~4.3.11",
+    "mocha": "~3.2.0",
+    "nyc": "~10.1.2",
+    "rimraf": "~2.6.1",
+    "rollup": "~0.41.5",
+    "rollup-plugin-alias": "~1.2.1",
+    "rollup-plugin-commonjs": "~8.0.2",
+    "rollup-plugin-css-only": "~0.2.0",
+    "rollup-plugin-node-resolve": "~2.0.0",
+    "rollup-plugin-sourcemaps": "~0.4.1",
+    "rollup-plugin-typescript2": "~0.3.0",
+    "rollup-plugin-uglify": "~1.0.1",
+    "rollup-watch": "~3.2.2",
+    "run-sequence": "~1.2.2",
+    "tslint": "~4.4.2",
+    "typedoc": "~0.5.7",
+    "typescript": "~2.2.2",
+    "yargs": "~7.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hpcc-systems/hpcc-js-comms.git"
+  },
+  "author": "Gordon Smith <gordonjsmith@gmail.com>",
+  "contributors": [],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/hpcc-systems/hpcc-js-comms/issues"
+  },
+  "homepage": "https://github.com/hpcc-systems/hpcc-js-comms"
+}

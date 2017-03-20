@@ -1,0 +1,12 @@
+.vscode/
+.nyc_output/
+coverage/
+dist/
+docx/
+lib/
+lib-umd/
+lib-test/
+node_modules/
+*.log
+*.tgz
+
