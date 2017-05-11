@@ -1,0 +1,47 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "tasks": [
+        {
+            "taskName": "test-es6",
+            "command": "tsc",
+            "isShellCommand": true,
+            "args": [
+                "-w",
+                "-p",
+                "./tsconfig.json"
+            ],
+            "showOutput": "silent",
+            "isBackground": true,
+            "problemMatcher": "$tsc-watch"
+        },
+        {
+            "taskName": "test-node",
+            "command": "tsc",
+            "isShellCommand": true,
+            "args": [
+                "-w",
+                "-p",
+                "./tsconfig-test-node.json"
+            ],
+            "showOutput": "silent",
+            "isBuildCommand": true,
+            "isBackground": true,
+            "problemMatcher": "$tsc-watch"
+        },
+        {
+            "taskName": "build-umd",
+            "command": "tsc",
+            "isShellCommand": true,
+            "args": [
+                "-w",
+                "-p",
+                "./tsconfig-umd.json"
+            ],
+            "showOutput": "silent",
+            "isBackground": true,
+            "problemMatcher": "$tsc-watch"
+        }
+    ]
+}
