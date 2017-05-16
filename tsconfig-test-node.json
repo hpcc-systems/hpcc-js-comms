@@ -1,0 +1,10 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./lib-test-cjs",
+        "module": "commonjs"
+    },
+    "include": [
+        "./test/index-node.ts"
+    ]
+}
