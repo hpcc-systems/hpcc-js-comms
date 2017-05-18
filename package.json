@@ -21,10 +21,11 @@
     "watch-browser": "gulp watch-browser",
     "watch-node": "gulp watch-node",
     "watch-test-browser": "gulp watch-test-browser",
-    "lint": "tslint ./src/**/*",
+    "lint": "tslint ./src/**/*.ts",
+    "lint-test": "tslint ./test/**/*.ts",
     "unittest": "mocha ./lib-test-cjs/test/index-node.js",
     "pretest": "gulp compile-test",
-    "test": "npm run lint && npm run unittest",
+    "test": "npm run lint && npm run lint-test && npm run unittest",
     "coverage": "npm run pretest && nyc --reporter=html npm run unittest"
   },
   "dependencies": {
