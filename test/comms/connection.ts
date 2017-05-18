@@ -14,9 +14,9 @@ describe.skip("Old Server", function () {
             type: RequestType.POST
         });
         return transport.send("WsWorkunits/WUQuery.json", {}).then((response) => {
-            var d = 0;
+            expect(true).to.be.true;
+            return response;
         }).catch((e) => {
-            console.log(e);
             expect(false).to.be.true;
         });
     });
