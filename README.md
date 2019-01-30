@@ -1,13 +1,13 @@
-[![Build Status](https://travis-ci.org/hpcc-systems/hpcc-js-comms.svg?branch=master)](https://travis-ci.org/hpcc-systems/hpcc-js-comms)
-[![Join the chat at https://gitter.im/hpcc-systems/hpcc-js-comms](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/hpcc-systems/hpcc-js-comms?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# Deprecated
+This repository has been deprecated in favour of [@hpcc-js/comms](https://github.com/hpcc-systems/Visualization) (available via [npm](https://www.npmjs.com/package/@hpcc-js/comms)).
 
-# hpcc-js-comms
+## hpcc-js-comms
 This module provides a convenient interface for interacting with the HPCC-Platform ESP API from a NodeJS or web browser.
 
-## Quick Examples ([...more](https://github.com/hpcc-systems/hpcc-js-comms/blob/master/test/esp/ecl/Workunit.ts))
+### Quick Examples ([...more](https://github.com/hpcc-systems/hpcc-js-comms/blob/master/test/esp/ecl/Workunit.ts))
 _...For the impatiant_
 
-###  Submitting ECL:
+####  Submitting ECL:
 * Submit ECL
 * Wait for completion
 * Fetch results
@@ -29,7 +29,7 @@ return Workunit.submit({baseUrl: "http://x.x.x.x:8010", usedID: "", password: ""
 });
 ```
 
-###  Fetch a list of Workunits
+####  Fetch a list of Workunits
 
 ```js
 import { Workunit } from "hpcc-js-comms";
@@ -41,7 +41,7 @@ return Workunit.query({ baseUrl: "http://x.x.x.x:8010", userID: "", password: ""
 });
 ```
 
-### Resubmit workunit
+#### Resubmit workunit
 ```js
 import { Workunit } from "hpcc-js-comms";
 
@@ -55,7 +55,7 @@ wu.resubmit()
     });
 ```
 
-## Installing
+### Installing
 
 If you use NPM, `npm install @hpcc-js/comms`. Otherwise, download the [latest release](https://github.com/hpcc-systems/hpcc-js-comms/releases/latest).  AMD, CommonJS, and vanilla JS environments are supported. (In vanilla, a `HPCCComms` global is exported):
 
@@ -72,6 +72,6 @@ return HPCCComms.query({ baseUrl: ESP_URL, userID: "", password: "" }, {}).then(
 
 [Try hpcc-js-comms in your browser.](https://tonicdev.com/npm/@hpcc-js/comms)
 
-## API Reference
+### API Reference
 
 TODO
